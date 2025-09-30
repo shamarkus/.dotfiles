@@ -1,0 +1,33 @@
+" ===== Basic Settings =====
+set nu                  " Show line numbers
+set rnu          " Show relative line numbers
+set showcmd                 " Show (partial) command in bottom bar
+set cursorline              " Highlight current line
+
+" ===== Indentation =====
+set smartindent             " Smart autoindenting on new lines
+set autoindent              " Copy indent from current line
+
+" ===== Searching =====
+set ignorecase              " Case-insensitive search
+set smartcase               " Case-sensitive if capital letters are used
+set incsearch               " Show matches as you type
+set shortmess-=S
+
+" ===== File Handling =====
+set undofile
+let &g:viminfofile=$HOME.'/.cache/vim/viminfo'
+let g:netrw_home=$HOME.'/.cache/vim'
+
+" ===== Appearance =====
+call plug#begin($XDG_CONFIG_HOME.'vim/plugged')
+Plug 'preservim/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
+call plug#end()
+
+nnoremap <C-n> :NERDTreeToggle<CR>
+
+nnoremap [1;5A <C-w>-
+nnoremap [1;5B <C-w>+
+nnoremap [1;5C <C-w>>
+nnoremap [1;5D <C-w><

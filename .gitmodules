@@ -1,0 +1,3 @@
+[submodule "dmenu.d"]
+	path = src/dmenu.d
+	url = git@github.com:shamarkus/dmenu.d.git
