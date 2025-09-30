@@ -20,7 +20,7 @@ let &g:viminfofile=$HOME.'/.cache/vim/viminfo'
 let g:netrw_home=$HOME.'/.cache/vim'
 
 " ===== Appearance =====
-call plug#begin($XDG_CONFIG_HOME.'vim/plugged')
+call plug#begin($XDG_CONFIG_HOME.'/vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
