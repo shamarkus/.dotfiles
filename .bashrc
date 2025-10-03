@@ -13,3 +13,9 @@ export DMENU_PATH="${HOME}/.local/bin"
 
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
+alias vi='/usr/bin/vim'
+alias vim='nvim'
+
+source /usr/share/fzf/completion.bash
+source /usr/share/fzf/key-bindings.bash
+
